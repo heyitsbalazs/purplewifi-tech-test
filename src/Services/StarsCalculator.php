@@ -42,9 +42,9 @@ final class StarsCalculator
     }
 
     /**
-     * @return array
+     * @return Collection
      */
-    public function getStars(): array
+    public function getStars(): Collection
     {
         return $this->stars;
     }
@@ -56,7 +56,7 @@ final class StarsCalculator
      */
     public function setStars($stars)
     {
-        $this->stars = $stars;
+        $this->stars = collect($stars);
         return $this;
     }
 
